@@ -17,6 +17,7 @@ export class MyFriendsComponent implements OnInit, OnDestroy {
   public dataSource: MatTableDataSource<Friend> = new MatTableDataSource();
 
   private notificationsSubscription = new Subscription();
+  private friendsSubscription = new Subscription();
   private durationInSeconds = 10;
 
   constructor(
@@ -38,6 +39,7 @@ export class MyFriendsComponent implements OnInit, OnDestroy {
    */
   public ngOnDestroy(): void {
     this.notificationsSubscription.unsubscribe();
+    this.friendsSubscription.unsubscribe();
   }
 
   /**
@@ -85,11 +87,10 @@ export class MyFriendsComponent implements OnInit, OnDestroy {
    * source.
    */
   private findFriends(): void {
-    const subscription = this.myFriendService
+    this.friendsSubscription = this.myFriendService
       .getFriends()
       .subscribe((payload: Friend[]) => {
         this.dataSource.data = payload;
-        subscription.unsubscribe();
       });
   }
 
