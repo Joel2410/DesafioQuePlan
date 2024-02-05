@@ -1,3 +1,7 @@
+# Backend
+
+Este proyecto fue generado con [Nest](https://github.com/nestjs/nest-cli) versión 10.3.0.
+
 ## Instalación
 
 ```bash
@@ -5,6 +9,7 @@ $ npm install
 ```
 
 ## Configuración
+
 <p>
 1. Buscar el archivo "docker-compose.yml" y cambiar las credenciales de Postgres y pgAdmin.
 </p>
