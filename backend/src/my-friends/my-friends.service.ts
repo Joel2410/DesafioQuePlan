@@ -15,7 +15,7 @@ export class MyFriendsService {
    * @returns a Promise that resolves to an array of MyFriends objects.
    */
   async getMyFirends(): Promise<MyFriends[]> {
-    return this.myFriends.findAll();
+    return this.myFriends.findAll({ order: [['id', 'ASC']] });
   }
 
   /**
