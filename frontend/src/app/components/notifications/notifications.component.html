@@ -1,0 +1,10 @@
+<span matSnackBarLabel> {{ message }} </span>
+<span matSnackBarActions class="notification">
+  <button
+    mat-button
+    matSnackBarAction
+    (click)="snackBarRef.dismissWithAction()"
+  >
+    Cerrar
+  </button>
+</span>
