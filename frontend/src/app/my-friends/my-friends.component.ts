@@ -34,8 +34,9 @@ export class MyFriendsComponent implements OnInit, OnDestroy {
     this.findFriends();
   }
 
+  
   /**
-   * The ngOnDestroy function unsubscribes from a notifications subscription.
+   * The ngOnDestroy function is used to unsubscribe from subscriptions to notifications and friends.
    */
   public ngOnDestroy(): void {
     this.notificationsSubscription.unsubscribe();
