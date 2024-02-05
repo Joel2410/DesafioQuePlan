@@ -5,9 +5,9 @@ Este proyecto trata de un backend en NestJS conetado a una base de datos en Post
 ## Instrucciones
 Para el correcto funcionamiento del proyecto seguir los siguientes pasos:
 
-##### Primero ir al proyecto "backend" y seguir los pasos de README.md
+##### Primero ir al proyecto "backend" y seguir los pasos de [README.md](https://github.com/Joel2410/DesafioQuePlan/blob/master/backend/README.md)
 
-##### Segundo ir al proyecto "frontend" y seguir los pasos de README.md
+##### Segundo ir al proyecto "frontend" y seguir los pasos de [README.md](https://github.com/Joel2410/DesafioQuePlan/blob/master/frontend/README.md)
 
 Una vez que los proyectos esten en ejecución podemos validar su funcionamiento aplicando cambios a la tabla directamente en la base de datos.
 
